@@ -16,7 +16,7 @@ import com.devsuperior.dslist.repositories.GameRepository;
 public class GameService {
 
     @Autowired
-    GameRepository gameRepository;
+    private GameRepository gameRepository;
 
     @Transactional(readOnly = true)
     public List<GameMinDTO> findAll() {

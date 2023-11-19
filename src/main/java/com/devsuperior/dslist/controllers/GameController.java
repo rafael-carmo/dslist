@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class GameController {
 
     @Autowired
-    GameService gameService;
+    private GameService gameService;
 
     @GetMapping
     public List<GameMinDTO> findAll() {
